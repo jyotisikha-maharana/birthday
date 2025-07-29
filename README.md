@@ -1,92 +1,109 @@
-# Happy Birthday Card
+# 🎂 Happy Birthday Card for Akshat
 
-A Customizable Web-based birthday card to wish your friends and family in a unique way.
+A beautiful, interactive web-based birthday card created with HTML, CSS, and JavaScript. This project features animated elements, sound effects, and a personalized birthday message.
 
-Check out the Previews -
+## ✨ Features
 
-- [Without Scroll Message](https://happy-birthday-card.vercel.app/)
-- [With Scroll Message](https://hbd-card.netlify.app/)
+- 🎈 Animated balloons and confetti
+- 🎵 Background music and sound effects
+- 🎁 Interactive elements and animations
+- 📱 Responsive design for all devices
+- 🎨 Beautiful visual effects and transitions
 
-If you liked it, please consider giving it star a 🤩⭐. You can also support me by sponsoring.
+## 🚀 Live Demo
 
----
+The birthday card is currently running locally at: `http://localhost:3000`
 
-## How to setup
+## 🛠️ Setup Instructions
 
-Here are the methods to set it up for yourself.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm
 
-### Remote Deployment
+### Installation
 
-- Vercel Deploy
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd Happy-Birthday-Card
+   ```
 
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAnshumanMahato%2FHappy-Birthday-Card&env=NAME,PIC&envDescription=NAME%20-%3E%20Name%20of%20the%20Receiver%20%7C%20PIC%20-%3E%20web%20url%20of%20a%20picture%20of%20the%20receiver&envLink=https%3A%2F%2Fgithub.com%2FAnshumanMahato%2FHappy-Birthday-Card%2Fblob%2Fmain%2Fdocs%2Fvariables.md&project-name=happy-birthday-card&repo-name=happy-birthday-card&demo-title=Happy%20Birthday%20Card&demo-description=This%20is%20a%20web%20based%20interactive%20birthday%20card.&demo-url=https%3A%2F%2Fhappy-birthday-card.vercel.app%2F&demo-image=https%3A%2F%2Ftelegra.ph%2Ffile%2Fac886529ccc3843552f81.png)
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- Netlify Deploy
+3. **Set up environment variables**
+   Create a `.env` file in the root directory:
+   ```env
+   NAME='Akshat'
+   PIC='sample-pic.jpg'
+   ```
 
-   [![Deploy with NEtlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AnshumanMahato/Happy-Birthday-Card)
+4. **Build the project**
+   ```bash
+   npm run init-index-local
+   npm run build:parcel
+   ```
 
-Remote deployment will require you to specify some mandatory environmental variables,
+5. **Serve locally**
+   ```bash
+   npx serve dist
+   ```
 
-- NAME: Name of the receiver.
-- PIC: Url of the pic to be loaded in the card. If don't have the image hosted somewhere, you may publish a [telegra.ph article](https://telegra.ph) with your image and copy the image address from there.
+## 🎯 Customization
 
-To know more about the environment variables, check [References](#references).
-
-### For Local Building
-
-1. Clone the repository
-
-```sh
-git clone https://github.com/AnshumanMahato/Happy-Birthday-Card
-
-```
-
-2. Install dependencies
-
-```sh
-npm install
-
-```
-
-3. Add a pic of the receiver, in the `./local` directory. Ensure that the image is of a 1:1 ratio or it might get cropped and squished.
-
-4. Create a `.env` file in the root directory, and add the following lines.
-
+### Changing the Birthday Person
+Edit the `.env` file:
 ```env
- NAME='Name of the Receiever'
- PIC='name-of-image.extension'
-
+NAME='New Name'
+PIC='new-image.jpg'
 ```
 
-5. Execute the following commands in order.
+### Adding a Scroll Message
+1. Add your message text to `local/scroll-message.txt`
+2. Update `.env`:
+   ```env
+   SCROLL_MSG='scroll-message.txt'
+   ```
 
-```sh
- npm run init-index-local
- npm run build:parcel
-
+### Changing the Birthday Message
+Add to `.env`:
+```env
+HBD_MSG='Your custom birthday message'
 ```
 
-6. Upon Successful execution, your built files will be ready in the `./dist` directory. Serve this directory using `live-server` or similar tools to see your card.
+## 📁 Project Structure
 
-For further customization, check out [here](./docs/customizations.md).
+```
+Happy-Birthday-Card/
+├── src/                    # Source files
+│   ├── index.html         # Main HTML file
+│   ├── js/               # JavaScript files
+│   ├── scss/             # SCSS styles
+│   └── resources/        # Images, sounds, etc.
+├── local/                # Local assets
+├── dist/                 # Built files
+├── builder/              # Build scripts
+└── docs/                 # Documentation
+```
+
+## 🎨 Technologies Used
+
+- **HTML5** - Structure
+- **CSS3/SCSS** - Styling and animations
+- **JavaScript (ES6+)** - Interactivity
+- **Parcel** - Build tool
+- **Node.js** - Development environment
+
+## 📝 License
+
+This project is open source and available under the [ISC License](LICENSE).
+
+## 🤝 Contributing
+
+Feel free to fork this project and create your own personalized birthday cards!
 
 ---
 
-## References
-
-- [Environment Variables](./docs/variables.md)
-- [Attributions](./docs/attributions.md)
-
----
-
-## Support
-
-If you have any queries or need some help in deployment, you may contact me here
-
-- [Telegram](https://t.me/AnshumanMahato)
-- [Email](mailto:rcoder.bytes@gmail.com)
-
-<div align="center">
-Made with 💖 by Anshuman Mahato
-</div>
-
+**Made with 💖 for Akshat's Birthday** 
