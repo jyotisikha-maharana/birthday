@@ -21,7 +21,7 @@ const setLocalData = async () => {
   try {
     const pic = path.join(__dirname, "../local/", picPath);
     let markup = "";
-    if (msgPath) {
+    if (msgPath && msgPath.trim() !== "") {
       const text = fs.readFileSync(path.join(__dirname, "../local/", msgPath), {
         encoding: "utf-8",
       });
